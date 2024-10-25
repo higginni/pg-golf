@@ -1,0 +1,51 @@
+/*********************
+COLORS
+*********************/
+
+/** Meals on Wheels Color Palette */
+$blue: #199cd8;
+$purple: #9c3e6b;
+$white: #f4f4f4;
+$sky-blue: #00b8c2;
+$grey-background: #b1b1b154;
+$grey-font: #929292;
+$green: #7eaf00;
+$black: #000;
+$shadow: rgba(0, 0, 0, 0.5);
+
+/*********************
+BREAKPOINTS
+*********************/
+@mixin breakpoint($class) {
+  @if $class == xxs {
+    @media (max-width: 479px) {
+      @content;
+    }
+  } @else if $class == xs {
+    @media (min-width: 480px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  } @else if $class == xl {
+    @media (min-width: 1400px) and (max-width: 1899px) {
+      @content;
+    }
+  } @else if $class == xxl {
+    @media (min-width: 1900px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xxs, xs, sm, md, lg, xl, xxl";
+  }
+}

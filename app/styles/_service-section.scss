@@ -1,0 +1,36 @@
+section.service-offering {
+  padding: 50px;
+  .col-md-4 {
+    text-align: center;
+    i {
+      font-size: 40px;
+      background-color: $green;
+      padding: 30px;
+      &.fas {
+        background-color: $green;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: space-around;
+        color: $white;
+      }
+    }
+    h2 {
+      font-size: 19px;
+      line-height: 30px;
+      text-align: center;
+    }
+    p {
+      margin-left: 5%;
+      font-size: 14px;
+      text-align: left;
+      color: $grey-font;
+      line-height: 28px;
+    }
+    ul {
+      text-align: left;
+      li {
+        color: $grey-font;
+      }
+    }
+  }
+}

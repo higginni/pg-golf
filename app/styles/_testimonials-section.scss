@@ -1,0 +1,71 @@
+section.testimonials {
+  padding: 50px;
+  text-align: center;
+  #carousel-interview {
+    ol {
+      &.carousel-indicators {
+        bottom: -165px;
+
+        @include breakpoint(md) {
+          bottom: -180px;
+        }
+        @include breakpoint(sm) {
+          bottom: -60px;
+        }
+        @include breakpoint(xs) {
+          bottom: -60px;
+        }
+        @include breakpoint(xxs) {
+          bottom: -110px;
+        }
+
+        li {
+          border: 1px solid transparent;
+          margin: 0;
+          &#indicator-1 {
+            background-image: url("../apple-touch-icon.png");
+            background-size: 100%;
+            padding: 20px;
+          }
+          &#indicator-2 {
+            background-image: url("../apple-touch-icon.png");
+            background-size: 100%;
+            padding: 20px;
+          }
+          &#indicator-3 {
+            background-image: url("../apple-touch-icon.png");
+            background-size: 100%;
+            padding: 20px;
+          }
+          &.active {
+            border: 1px solid $green;
+          }
+          &:hover {
+            border: 1px solid $green;
+          }
+        }
+      }
+    }
+    h5 {
+      text-align: center;
+      color: $grey-font;
+      font-weight: 100;
+      font-size: 18px;
+      font-style: italic;
+    }
+    p {
+      &.customer-name {
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+    .carousel-control {
+      &.left {
+        background-image: none;
+      }
+      &.right {
+        background-image: none;
+      }
+    }
+  }
+}

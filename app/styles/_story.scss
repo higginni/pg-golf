@@ -1,0 +1,120 @@
+section {
+  &.story {
+    background-image: url("../images/Embraer.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 110%;
+    height: 100vh;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset 0 0 0 999em $shadow;
+    @include breakpoint(md) {
+      background-size: cover;
+      background-position: 0%;
+      height: 50vh;
+    }
+    @include breakpoint(sm) {
+      background-size: cover;
+      background-position: 0%;
+      height: 40vh;
+    }
+    @include breakpoint(xs) {
+      background-size: cover;
+      background-position: 0%;
+      height: 40vh;
+    }
+    @include breakpoint(xxs) {
+      background-size: cover;
+      background-position: 0%;
+      height: 40vh;
+    }
+    .col-md-5 {
+    }
+    .col-md-6 {
+      background-color: white;
+      text-align: center;
+      i {
+        font-size: 40px;
+        background-color: $green;
+        padding: 30px;
+        &.fas {
+          background-color: $green;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: space-around;
+          color: $white;
+        }
+      }
+      h4 {
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 20px;
+        color: $black;
+        font-size: 2em;
+        font-weight: 400;
+        padding-bottom: 20px;
+      }
+      .col-md-12 {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        div {
+          display: flex;
+          align-items: center;
+          p {
+            font-size: 11px;
+            padding-bottom: 0;
+            margin: 20px 0;
+            align-items: center;
+          }
+          i {
+            margin: 22px;
+            align-items: center;
+            background-color: $green;
+            padding: 10px;
+            font-size: 18px;
+            float: left;
+            border-radius: 50px;
+          }
+        }
+      }
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+        i {
+          margin: 22px;
+          background-color: $green;
+          padding: 10px;
+          font-size: 18px;
+          float: left;
+          border-radius: 50px;
+        }
+        li {
+          padding: 10px 10px;
+        }
+      }
+      p {
+        justify-content: space-around;
+        align-items: center;
+        color: $black;
+        padding-bottom: 20px;
+        font-size: 18px;
+
+        // Line gap problem
+        // line-height: 32px;
+        line-height: 24px;
+      }
+    }
+
+    .input-group-btn {
+      .btn-success {
+        padding: 24px 25px 16px 25px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}

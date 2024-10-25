@@ -1,0 +1,47 @@
+.fleet {
+    height: 80vh;
+    .container {
+        h2 {
+            padding: 20px; 
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .table {
+                margin-bottom: 0;
+                width: 80%;
+
+                &.top {
+
+                    th {
+                        background-color: #189dd8;
+                        color: $white;
+                        font-size: 18px;
+
+                        img {
+                            height: 30px;
+                            float: right;
+                            width: 47%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                &.bottom {
+                    th {
+                        background-color: #189dd8;
+                        color: $white;
+                        font-size: 18px;
+                    }
+
+                    tbody {
+                        background-color: #eee;
+                    }
+                }
+            }
+        }
+    }
+}

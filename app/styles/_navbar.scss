@@ -1,0 +1,46 @@
+.navbar {
+  margin-bottom: 0;
+  height: 100px;
+  background-color: #fff;
+  border-bottom: 10px solid $blue;
+
+  a {
+    cursor: pointer;
+
+    &.navbar-brand {
+      img {
+        width: 150px;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  ul {
+    .social-icons {
+
+      a {
+        margin: 5px 10px;
+        font-size: 16px;
+        color: $white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $green;
+        border: 1px solid $white;
+
+        &:hover {
+          border: 1px solid $green;
+          color: #777;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+.nav {
+  .navbar-nav {
+    background-color: $white;
+  }
+}

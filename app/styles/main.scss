@@ -1,0 +1,24 @@
+// $icon-font-path: "../fonts/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "_variables.scss";
+@import "_navbar.scss";
+@import "_full-background-image.scss";
+@import "_signup-section.scss";
+@import "_service-section.scss";
+@import "_testimonials-section.scss";
+@import "story.scss";
+@import "_contact-section.scss";
+@import "_footer-section.scss";
+@import "_board.scss";
+@import "_modal.scss";
+@import "_fleet.scss";
+@import "_supports.scss";
+@import "_our-vision-section.scss";
+@import "_vision-section.scss";
+
+
+body {
+  font-family: "Roboto", sans-serif;
+}

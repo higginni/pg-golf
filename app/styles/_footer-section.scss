@@ -1,0 +1,27 @@
+footer.footer {
+  background-color: $grey-background;
+  padding: 30px;
+  display: flex;
+  ul {
+    text-align: center;
+    padding-left: 0;
+    &.footer-list {
+      @include breakpoint(xxs) {
+        list-style-type: none;
+      }
+      li {
+        display: inline-block;
+        margin: 0 15px;
+        @include breakpoint(xxs) {
+          display: block;
+        }
+        a {
+          color: $grey-font;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
